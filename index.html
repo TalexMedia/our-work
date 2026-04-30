@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Work · Talex Media</title>
+<link rel="icon" type="image/png" sizes="192x192" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="shortcut icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png" type="image/png"/>
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/3c6878_9a68ae0b3ff84e198fdd43fac493e294~mv2_d_1500_1500_s_2.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --o:#E85A0C;
+  --o-dim:rgba(232,90,12,0.08);
+  --o-mid:rgba(232,90,12,0.18);
+  --o-border:rgba(232,90,12,0.28);
+  --bg:#F5F2EC;
+  --surface:#FFFFFF;
+  --surface2:#FAF8F5;
+  --border:#E2DDD6;
+  --border-strong:#C8C2BA;
+  --txt:#1A1816;
+  --txt2:#6B625A;
+  --txt3:#A89E96;
+}
+
+html{background:var(--bg);color:var(--txt);font-family:'DM Sans',system-ui,sans-serif;font-size:15px;line-height:1.6}
+body{background:var(--bg);min-height:100vh}
+#wrap{max-width:700px;margin:0 auto;padding:0 1.25rem 5rem}
+
+/* Typography */
+.disp{font-family:'Bebas Neue',sans-serif;letter-spacing:0.04em;line-height:1}
+.head{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.02em;line-height:1.1}
+.lbl{font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.14em;text-transform:uppercase}
+.italic{font-family:'EB Garamond',Georgia,serif;font-style:italic}
+
+/* Top bar */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;border-bottom:1px solid var(--border)}
+.topbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.topbar-logo{height:28px;width:auto}
+.topbar-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.08em;color:var(--txt)}
+.topbar-divider{width:1px;height:18px;background:var(--border-strong)}
+.topbar-tool{font-family:'Oswald',sans-serif;font-weight:400;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt2)}
+
+/* Hero */
+.hero{padding:3rem 0 2.5rem;border-bottom:2px solid var(--o)}
+.hero-eyebrow{font-family:'Oswald',sans-serif;font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--txt2);margin-bottom:1rem}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,8vw,66px);letter-spacing:0.04em;line-height:1;color:var(--txt);margin-bottom:0.5rem}
+.hero-tagline{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:clamp(19px,3.5vw,26px);color:var(--o);margin-bottom:1rem}
+.hero-desc{max-width:560px;font-size:14px;color:var(--txt2);line-height:1.8}
+
+.rule-orange{height:2px;background:var(--o);border:none;margin:2.5rem 0}
+
+/* Section header */
+.section-step{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.step-num-circle{width:38px;height:38px;border-radius:50%;background:var(--o);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:20px;flex-shrink:0}
+.step-label{display:flex;flex-direction:column}
+.step-eyebrow{font-family:'Oswald',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--txt3);margin-bottom:1px}
+.step-title{font-family:'Oswald',sans-serif;font-size:20px;font-weight:600;color:var(--txt);letter-spacing:0.02em}
+
+.section-intro{font-size:14px;color:var(--txt2);line-height:1.8;margin-bottom:1.75rem}
+
+/* Case study card (dark, mirrors proposal template) */
+.case-card{
+  background:var(--txt);
+  border-radius:12px;
+  padding:1.5rem 1.5rem 1.75rem;
+  margin-bottom:1rem;
+  color:#fff;
+  overflow:hidden;
+}
+.cs-label{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--o);margin-bottom:0.5rem}
+.cs-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,5vw,42px);letter-spacing:0.03em;line-height:1;color:#fff;margin-bottom:1.1rem}
+.cs-stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+.cs-stat-cell{background:rgba(255,255,255,0.04);border-top:2px solid var(--o);padding:0.75rem 0.6rem 0.65rem}
+.cs-stat-num{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.03em;color:var(--o);line-height:1.05}
+.cs-stat-label{font-size:10px;color:rgba(255,255,255,0.55);line-height:1.35;margin-top:2px}
+.cs-section{border-left:3px solid var(--o);padding:0.5rem 0 0.5rem 0.85rem;margin-bottom:0.9rem}
+.cs-section:last-child{margin-bottom:0}
+.cs-section-label{font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:0.35rem}
+.cs-section-body{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.7}
+.cs-footer-meta{margin-top:1.1rem;padding-top:0.9rem;border-top:1px solid rgba(255,255,255,0.1);font-size:11px;color:rgba(255,255,255,0.45);font-family:'Oswald',sans-serif;letter-spacing:0.06em;text-align:center}
+
+/* 16:9 video placeholder (sits inside dark case card) */
+.cs-video{
+  margin-top:1.25rem;
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#0F0E0D;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:8px;
+  overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+}
+.cs-video::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(232,90,12,0.06) 0%,rgba(0,0,0,0) 60%);
+}
+.cs-video-play{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(232,90,12,0.95);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:2;
+  transition:transform 0.2s ease;
+}
+.cs-video:hover .cs-video-play{transform:scale(1.06)}
+.cs-video-play svg{width:22px;height:22px;fill:#fff;margin-left:3px}
+.cs-video-caption{
+  position:absolute;
+  bottom:12px;left:14px;
+  font-family:'Oswald',sans-serif;font-size:10px;
+  letter-spacing:0.14em;text-transform:uppercase;
+  color:rgba(255,255,255,0.55);
+  z-index:2;
+}
+.cs-video-tag{
+  position:absolute;
+  top:12px;right:14px;
+  font-family:'Oswald',sans-serif;font-size:9px;
+  letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--o);
+  border:1px solid var(--o);
+  padding:3px 8px;border-radius:3px;
+  z-index:2;
+}
+
+/* 16:9 video embed (real video, replaces .cs-video placeholder) */
+.cs-video-embed{
+  margin-top:1.25rem;
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#0F0E0D;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:8px;
+  overflow:hidden;
+}
+.cs-video-embed iframe{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  border:0;display:block;
+}
+.proj-video-embed{
+  margin-top:1.1rem;
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:var(--txt);
+  border-radius:8px;
+  overflow:hidden;
+}
+.proj-video-embed iframe{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  border:0;display:block;
+}
+
+/* Television section */
+.tv-intro-quote{
+  font-family:'EB Garamond',Georgia,serif;font-style:italic;
+  font-size:17px;color:var(--txt);line-height:1.7;
+  border-left:3px solid var(--o);
+  padding:0.5rem 0 0.5rem 1rem;
+  margin:0 0 1.75rem 0;
+}
+.tv-network-strip{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:2rem;
+}
+.tv-network{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:1.6rem 0.5rem;
+  text-align:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:90px;
+}
+.tv-network-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:24px;letter-spacing:0.06em;
+  color:var(--txt);
+  line-height:1;
+}
+.tv-network-name.small{font-size:18px;letter-spacing:0.04em}
+.tv-network-sub{
+  font-family:'Oswald',sans-serif;font-weight:400;
+  font-size:9px;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--txt3);
+  margin-top:6px;
+}
+
+.tv-credits-box{
+  background:var(--surface2);
+  border:1px dashed var(--border-strong);
+  border-radius:8px;
+  padding:1.4rem 1.5rem;
+}
+.tv-credits-eyebrow{
+  font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;
+  letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--o);margin-bottom:0.4rem;
+}
+.tv-credits-note{
+  font-size:12px;color:var(--txt2);font-style:italic;
+  margin-bottom:1rem;
+}
+.tv-credit-row{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1.2fr 0.5fr;
+  gap:10px;
+  padding:0.75rem 0;
+  border-top:1px solid var(--border);
+  font-size:13px;
+  align-items:center;
+}
+.tv-credit-row:first-of-type{border-top:none;padding-top:0.4rem}
+.tv-credit-title{font-family:'Oswald',sans-serif;font-weight:500;color:var(--txt)}
+.tv-credit-meta{color:var(--txt3);font-size:11px;letter-spacing:0.04em}
+.tv-credit-placeholder{color:var(--txt3);font-style:italic}
+
+/* More Projects section */
+.proj-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:1.5rem 1.5rem 1.75rem;
+  margin-bottom:1rem;
+}
+.proj-header{
+  display:flex;align-items:center;gap:14px;
+  padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+  margin-bottom:1.1rem;
+}
+.proj-logo-wrap{
+  flex-shrink:0;
+  width:84px;height:60px;
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  padding:6px;
+}
+.proj-logo{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.proj-meta{flex:1;min-width:0}
+.proj-label{font-family:'Oswald',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:3px}
+.proj-name{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.03em;line-height:1;color:var(--txt)}
+.proj-desc{
+  font-size:13.5px;color:var(--txt2);line-height:1.75;
+  padding:0 0 0.25rem 0;
+}
+.proj-draft-flag{
+  display:inline-block;
+  margin-top:0.65rem;
+  font-family:'Oswald',sans-serif;font-weight:500;
+  font-size:9px;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--o);
+  background:var(--o-dim);
+  border:1px solid var(--o-border);
+  padding:3px 7px;border-radius:3px;
+}
+
+/* 16:9 video placeholder for projects (light variant) */
+.proj-video{
+  margin-top:1.1rem;
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:var(--txt);
+  border-radius:8px;
+  overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+}
+.proj-video::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(232,90,12,0.08) 0%,rgba(0,0,0,0) 60%);
+}
+.proj-video-play{
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(232,90,12,0.95);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:2;
+  transition:transform 0.2s ease;
+}
+.proj-video:hover .proj-video-play{transform:scale(1.06)}
+.proj-video-play svg{width:18px;height:18px;fill:#fff;margin-left:3px}
+.proj-video-caption{
+  position:absolute;
+  bottom:12px;left:14px;
+  font-family:'Oswald',sans-serif;font-size:10px;
+  letter-spacing:0.14em;text-transform:uppercase;
+  color:rgba(255,255,255,0.55);
+  z-index:2;
+}
+.proj-video-tag{
+  position:absolute;
+  top:12px;right:14px;
+  font-family:'Oswald',sans-serif;font-size:9px;
+  letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--o);
+  border:1px solid var(--o);
+  padding:3px 8px;border-radius:3px;
+  z-index:2;
+}
+
+.draft-banner{
+  background:var(--o-dim);
+  border:1px solid var(--o-border);
+  border-radius:8px;
+  padding:0.85rem 1rem;
+  margin-bottom:1.5rem;
+  font-size:12.5px;color:var(--txt2);
+  line-height:1.65;
+}
+.draft-banner strong{color:var(--o);font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.04em}
+
+/* CTA */
+.cta-block{
+  background:var(--surface);
+  border:2px solid var(--o);
+  border-radius:12px;
+  padding:2.25rem 1.5rem;
+  text-align:center;
+  margin-top:2rem;
+}
+.cta-eyebrow{font-family:'Oswald',sans-serif;font-weight:500;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--txt3);margin-bottom:0.5rem}
+.cta-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:0.04em;line-height:1.05;color:var(--txt);margin-bottom:0.5rem}
+.cta-sub{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:16px;color:var(--txt2);margin-bottom:1.5rem}
+.cta-btn{
+  display:inline-block;
+  background:var(--o);color:#fff;
+  font-family:'Oswald',sans-serif;font-weight:600;
+  font-size:14px;letter-spacing:0.1em;text-transform:uppercase;
+  padding:14px 32px;border-radius:6px;
+  text-decoration:none;
+  transition:background 0.15s ease;
+}
+.cta-btn:hover{background:#cf4f0a}
+
+/* Footer */
+.page-footer{
+  margin-top:3.5rem;padding-top:1.5rem;
+  border-top:1px solid var(--border);
+  text-align:center;
+  font-size:11px;color:var(--txt3);
+  font-family:'Oswald',sans-serif;letter-spacing:0.08em;text-transform:uppercase;
+}
+
+@media (max-width:520px){
+  .cs-stat-strip{grid-template-columns:1fr 1fr}
+  .tv-network-strip{grid-template-columns:1fr}
+  .tv-credit-row{grid-template-columns:1fr;gap:4px}
+  .proj-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .proj-logo-wrap{width:84px;height:54px}
+}
+</style>
+</head>
+<body>
+
+<div id="wrap">
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <a class="topbar-brand" href="https://talexmedia.com">
+      <img class="topbar-logo" src="https://static.wixstatic.com/media/3c6878_02b04a4a92a342898c90fe28dbc74be9~mv2_d_1500_1500_s_2.png" alt="Talex Media"/>
+      <span class="topbar-name">TALEX MEDIA</span>
+    </a>
+    <div class="topbar-divider"></div>
+    <span class="topbar-tool">Our Work</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">Talex Media · Selected Work</div>
+    <h1 class="hero-title">Build Your Legend.</h1>
+    <p class="hero-tagline">Story-driven video, made to be chosen.</p>
+    <p class="hero-desc">Two-time Emmy Award nominee Tom Langan has spent twenty-five years directing content for the BBC, NBC Universal, and Discovery, leading multi-million-dollar productions everywhere from the Arctic Circle to sub-Saharan Africa. Talex Media brings that same broadcast standard to the brands, founders, and missions we partner with today. What follows is a selection of that work.</p>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ══════════ 01 CASE STUDIES ══════════ -->
+  <div class="section-step">
+    <div class="step-num-circle">01</div>
+    <div class="step-label">
+      <div class="step-eyebrow">Results That Speak</div>
+      <div class="step-title">Case Studies · Three Industries, One Outcome</div>
+    </div>
+  </div>
+
+  <p class="section-intro">Three partnerships. Three industries. One shared outcome: the work moved people, and the people moved the needle.</p>
+
+  <!-- ── Case Study: Elizabeth Seton Children's ── -->
+  <div class="case-card" data-case="elizabeth-seton" data-industry="nonprofit">
+    <div class="cs-label">Case Study 01 · Nonprofit</div>
+    <div class="cs-name">Elizabeth Seton Children's</div>
+    <div class="cs-stat-strip">
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">96</div>
+        <div class="cs-stat-label">Beds in new young adult center</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">$156M</div>
+        <div class="cs-stat-label">Project investment</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">2025</div>
+        <div class="cs-stat-label">Year of groundbreaking</div>
+      </div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Challenge</div>
+      <div class="cs-section-body">In 2020, Elizabeth Seton Children's launched a capital campaign to fund a $156 million young adult care facility for patients aging out of their pediatric program. They needed video content that would inspire donors, communicate urgency, and sustain momentum across a multi-year campaign.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Approach</div>
+      <div class="cs-section-body">Talex Media produced multiple pieces of informational, inspirational, and commercial fundraising content across the campaign lifecycle. Each piece was designed to give donors a genuine connection to the mission and the people it serves, not just a request for money.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Result</div>
+      <div class="cs-section-body">In August 2025, Elizabeth Seton Children's broke ground on their new 96-bed young adult center in White Plains, NY, the first standalone facility of its kind in the United States, providing care for young adults aged 18 to 35 with complex medical needs. The facility is expected to open in January 2028.</div>
+    </div>
+
+    <!-- Elizabeth Seton featured video (Google Drive embed) -->
+    <div class="cs-video-embed">
+      <iframe src="https://drive.google.com/file/d/1FgRWPy1kwtam3jvAfU29DLX42T6oGLlj/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Elizabeth Seton Children's · Featured Video"></iframe>
+    </div>
+
+    <div class="cs-footer-meta">First standalone young adult complex-care facility in the U.S. · 96 beds · $156M · Groundbreaking Aug 2025</div>
+  </div>
+
+  <!-- ── Case Study: Resorts World NYC ── -->
+  <div class="case-card" data-case="resorts-world" data-industry="enterprise">
+    <div class="cs-label">Case Study 02 · Enterprise</div>
+    <div class="cs-name">Resorts World New York City</div>
+    <div class="cs-stat-strip">
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">$5.5B</div>
+        <div class="cs-stat-label">Site development investment</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">10+</div>
+        <div class="cs-stat-label">Video pieces produced</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">Dec '25</div>
+        <div class="cs-stat-label">Gaming license awarded</div>
+      </div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Challenge</div>
+      <div class="cs-section-body">In 2025, Resorts World International launched a high-stakes public campaign to secure a New York City commercial gaming license and advance their $5.5B investment to transform their existing casino at Aqueduct Racetrack into a full-scale integrated resort. Their communications needed to be credible, compelling, and precise.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Approach</div>
+      <div class="cs-section-body">Talex Media produced more than 10 distinct pieces of video content spanning community impact narratives, stakeholder communications, and public-facing advocacy. Each piece was built on a story-first foundation designed to move people, not just inform them.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Result</div>
+      <div class="cs-section-body">On December 15, 2025, the NY State Gaming Commission awarded Resorts World NYC one of only three downstate commercial gaming licenses. Talex Media's content supported one of the most consequential licensing decisions in NYC's recent history.</div>
+    </div>
+
+    <div class="cs-video" role="button" aria-label="Featured video for Resorts World NYC">
+      <span class="cs-video-tag">Video</span>
+      <div class="cs-video-play">
+        <svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg>
+      </div>
+      <span class="cs-video-caption">Featured · Resorts World NYC</span>
+    </div>
+
+    <div class="cs-footer-meta">NYC Gaming License Awarded Dec 15, 2025 · 10+ Videos Produced · $5.5B Investment · Spring 2026 Opening</div>
+  </div>
+
+  <!-- ── Case Study: Sobo & Sobo ── -->
+  <div class="case-card" data-case="sobo-sobo" data-industry="growth-brand">
+    <div class="cs-label">Case Study 03 · Growth Brand</div>
+    <div class="cs-name">Sobo &amp; Sobo LLP</div>
+    <div class="cs-stat-strip">
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">2020</div>
+        <div class="cs-stat-label">Partnership begin date</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">7</div>
+        <div class="cs-stat-label">States with Sobo offices</div>
+      </div>
+      <div class="cs-stat-cell">
+        <div class="cs-stat-num">5+</div>
+        <div class="cs-stat-label">Years of ongoing campaigns</div>
+      </div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Challenge</div>
+      <div class="cs-section-body">In 2020, Sobo &amp; Sobo, a New York-based personal injury law firm, engaged Talex Media. They needed commercial video campaigns that could anchor their brand, differentiate them in a competitive legal market, and fuel their growth ambitions across new markets.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Approach</div>
+      <div class="cs-section-body">Since 2020, Talex Media has produced all of Sobo &amp; Sobo's commercial video campaigns, an ongoing, multi-year embedded partnership bringing brand consistency, strategic communication, and production quality to every new market they enter.</div>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">The Result</div>
+      <div class="cs-section-body">Since the partnership began, Sobo &amp; Sobo has grown from a NY-focused firm into a multi-state legal practice with offices in NY, CT, NJ, IL, OH, PA, and WI. Talex Media's campaigns have accompanied every stage of that expansion.</div>
+    </div>
+
+    <div class="cs-video-embed">
+      <iframe src="https://drive.google.com/file/d/1JBjEj8YLfUKDsEywWhUAoutVmusDIam1/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Sobo &amp; Sobo · Featured Video"></iframe>
+    </div>
+
+    <div class="cs-footer-meta">5+ Year Partnership · All Commercial Campaigns · 7 States: NY, CT, NJ, IL, OH, PA, WI</div>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ══════════ 02 TELEVISION ══════════ -->
+  <div class="section-step">
+    <div class="step-num-circle">02</div>
+    <div class="step-label">
+      <div class="step-eyebrow">Broadcast Track Record</div>
+      <div class="step-title">Television · A Career in Broadcast</div>
+    </div>
+  </div>
+
+  <p class="tv-intro-quote">Hundreds of hours of nationally and globally distributed programming for major broadcasters, leading multi-million-dollar productions in environments from the Arctic Circle to sub-Saharan Africa.</p>
+
+  <div class="tv-network-strip">
+    <div class="tv-network">
+      <div class="tv-network-name">BBC</div>
+      <div class="tv-network-sub">British Broadcasting</div>
+    </div>
+    <div class="tv-network">
+      <div class="tv-network-name small">NBC UNIVERSAL</div>
+      <div class="tv-network-sub">Network &amp; Cable</div>
+    </div>
+    <div class="tv-network">
+      <div class="tv-network-name">DISCOVERY</div>
+      <div class="tv-network-sub">Documentary &amp; Lifestyle</div>
+    </div>
+  </div>
+
+  <!--
+    ════════════════════════════════════════════════════════════════════
+    SELECTED CREDITS — placeholder grid for Tom to populate.
+    Format per row: Show Title · Network · Role · Year(s)
+    Replace .tv-credit-placeholder spans with real values once confirmed.
+    ════════════════════════════════════════════════════════════════════
+  -->
+  <div class="tv-credits-box">
+    <div class="tv-credits-eyebrow">Selected Credits</div>
+    <div class="tv-credits-note">[Tom: drop in 4-6 specific show titles. Format below: title, network, your role, year. Remove this note before publishing.]</div>
+
+    <div class="tv-credit-row">
+      <div class="tv-credit-title tv-credit-placeholder">[Show title]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Network]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Role]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Year]</div>
+    </div>
+    <div class="tv-credit-row">
+      <div class="tv-credit-title tv-credit-placeholder">[Show title]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Network]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Role]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Year]</div>
+    </div>
+    <div class="tv-credit-row">
+      <div class="tv-credit-title tv-credit-placeholder">[Show title]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Network]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Role]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Year]</div>
+    </div>
+    <div class="tv-credit-row">
+      <div class="tv-credit-title tv-credit-placeholder">[Show title]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Network]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Role]</div>
+      <div class="tv-credit-meta tv-credit-placeholder">[Year]</div>
+    </div>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ══════════ 03 MORE PROJECTS ══════════ -->
+  <div class="section-step">
+    <div class="step-num-circle">03</div>
+    <div class="step-label">
+      <div class="step-eyebrow">Selected Work</div>
+      <div class="step-title">More Projects</div>
+    </div>
+  </div>
+
+  <p class="section-intro">A wider sample of the partnerships, campaigns, and brand films Talex Media has produced.</p>
+
+  <div class="draft-banner">
+    <strong>Draft note:</strong> The descriptions below are example placeholders so Tom can see the layout. Each project is real (sourced from talexmedia.com), but the body copy needs Tom's confirmation or rewrite before this page goes live.
+  </div>
+
+  <!-- ── Project: House Beautiful ── -->
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-logo-wrap">
+        <img class="proj-logo" src="https://static.wixstatic.com/media/3c6878_b9c31dcc31514d5dbfcf0b9de7c2d5c0~mv2.png" alt="House Beautiful logo"/>
+      </div>
+      <div class="proj-meta">
+        <div class="proj-label">Episodic Web Content</div>
+        <div class="proj-name">House Beautiful</div>
+      </div>
+    </div>
+    <p class="proj-desc">Talex Media produced episodic digital content for House Beautiful, building short-form pieces designed to live on the brand's web and social channels with the production polish of a network show. Each episode pairs editorial credibility with story-first pacing, the same standard Tom brought from his broadcast career.</p>
+    <span class="proj-draft-flag">Draft · Tom to confirm</span>
+
+    <div class="proj-video-embed">
+      <iframe src="https://drive.google.com/file/d/1QPksJcZgmSxfG7n4awDMLgIOwUJjdKI6/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="House Beautiful · Featured Video"></iframe>
+    </div>
+  </div>
+
+  <!-- ── Project: Ronald McDonald House ── -->
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-logo-wrap">
+        <img class="proj-logo" src="https://static.wixstatic.com/media/3c6878_e42da5f67dbf440b9b6dad271201ec84~mv2.png" alt="Ronald McDonald House logo"/>
+      </div>
+      <div class="proj-meta">
+        <div class="proj-label">Fundraising Content</div>
+        <div class="proj-name">Ronald McDonald House</div>
+      </div>
+    </div>
+    <p class="proj-desc">Talex Media produced fundraising-focused video content for Ronald McDonald House, telling the family stories behind the mission and giving donors a genuine human connection to the work. The pieces were built to support events, campaigns, and ongoing donor cultivation.</p>
+    <span class="proj-draft-flag">Draft · Tom to confirm</span>
+
+    <div class="proj-video-embed">
+      <iframe src="https://drive.google.com/file/d/1Ea96i6Fd8UNFpcVbbJVyqKsmSmSCnVpq/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Ronald McDonald House · Featured Video"></iframe>
+    </div>
+  </div>
+
+  <!-- ── Project: Independent Helicopters ── -->
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-logo-wrap">
+        <img class="proj-logo" src="https://static.wixstatic.com/media/3c6878_142b70b003a34517904651ef273a820a~mv2.png" alt="Independent Helicopters logo"/>
+      </div>
+      <div class="proj-meta">
+        <div class="proj-label">Narrative Marketing Film</div>
+        <div class="proj-name">Independent Helicopters</div>
+      </div>
+    </div>
+    <p class="proj-desc">Talex Media produced a narrative marketing film for Independent Helicopters, founded and led by Heather Howley. The piece was built around the founder's story and the operation's identity, framing the company as a genuine character in its market rather than a service buyer.</p>
+    <span class="proj-draft-flag">Draft · Tom to confirm</span>
+
+    <div class="proj-video-embed">
+      <iframe src="https://drive.google.com/file/d/11TgAV8kiZKXSplWtf9-PVg2NHObNVmZR/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Independent Helicopters · Featured Video"></iframe>
+    </div>
+  </div>
+
+  <!-- ── Project: Mid-Hudson Valley FCU ── -->
+  <div class="proj-card">
+    <div class="proj-header">
+      <div class="proj-logo-wrap">
+        <img class="proj-logo" src="https://www.datocms-assets.com/166635/1757514962-logo-mid_hudson_valley_fcu.svg" alt="Mid-Hudson Valley Federal Credit Union logo"/>
+      </div>
+      <div class="proj-meta">
+        <div class="proj-label">Broadcast Commercial</div>
+        <div class="proj-name">Mid-Hudson Valley FCU</div>
+      </div>
+    </div>
+    <p class="proj-desc">Talex Media produced a broadcast commercial for Mid-Hudson Valley Federal Credit Union, a regional credit union serving the Hudson Valley. The piece was built to anchor the credit union's brand presence in the local market and support a specific branch campaign.</p>
+    <span class="proj-draft-flag">Draft · Tom to confirm</span>
+
+    <div class="proj-video-embed">
+      <iframe src="https://drive.google.com/file/d/1Y1FPJORR4dpQxILnz7vH4bfXnjSjHOOa/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Mid-Hudson Valley FCU · Featured Video"></iframe>
+    </div>
+  </div>
+
+  <hr class="rule-orange"/>
+
+  <!-- ══════════ CTA ══════════ -->
+  <div class="cta-block">
+    <div class="cta-eyebrow">Build Your Legend</div>
+    <div class="cta-title">See What Yours Could Look Like.</div>
+    <p class="cta-sub">Free 30-minute strategy conversation with Tom.</p>
+    <a class="cta-btn" href="https://calendly.com/talextom/touching-base">Book a Call</a>
+  </div>
+
+  <div class="page-footer">
+    Talex Media · Build Your Legend · talexmedia.com
+  </div>
+
+</div>
+
+</body>
+</html>
