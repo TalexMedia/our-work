@@ -203,6 +203,46 @@ body{background:var(--bg);min-height:100vh}
   line-height:1.2;
 }
 
+/* Featured TV episode card */
+.tv-feature{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:1.25rem 1.25rem 1.4rem;
+  margin-bottom:1.5rem;
+}
+.tv-feature-label{
+  font-family:'Oswald',sans-serif;font-weight:600;font-size:10px;
+  letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--o);margin-bottom:0.5rem;
+}
+.tv-feature-show{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:34px;letter-spacing:0.04em;line-height:1;
+  color:var(--txt);
+  margin-bottom:0.3rem;
+}
+.tv-feature-sub{
+  font-family:'Oswald',sans-serif;font-weight:400;
+  font-size:12px;letter-spacing:0.06em;
+  color:var(--txt2);
+  margin-bottom:1.1rem;
+}
+.tv-feature-video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:var(--txt);
+  border-radius:6px;
+  overflow:hidden;
+}
+.tv-feature-video iframe{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  border:0;display:block;
+}
+.tv-feature-flag{margin-top:0.95rem;display:inline-block}
+
 .tv-credits-box{
   background:var(--surface2);
   border:1px dashed var(--border-strong);
@@ -551,6 +591,17 @@ body{background:var(--bg);min-height:100vh}
       <img class="tv-network-logo discovery" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Discovery_Channel_-_Logo_2019.svg" alt="Discovery"/>
       <div class="tv-network-sub">Documentary &amp; Lifestyle</div>
     </div>
+  </div>
+
+  <!-- ── Featured TV episode: Her Big Idea (NYC TV) ── -->
+  <div class="tv-feature">
+    <div class="tv-feature-label">Featured Episode</div>
+    <div class="tv-feature-show">Her Big Idea</div>
+    <div class="tv-feature-sub">NYC TV · Featuring Sharon Rowe, Founder, CEO &amp; Author</div>
+    <div class="tv-feature-video">
+      <iframe src="https://drive.google.com/file/d/1Ul2qupi7XO97MoP3XUYFSu9My0ym6wsk/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy" title="Her Big Idea · NYC TV · Sharon Rowe"></iframe>
+    </div>
+    <span class="proj-draft-flag tv-feature-flag">Tom's role &amp; year · to confirm</span>
   </div>
 
   <!--
