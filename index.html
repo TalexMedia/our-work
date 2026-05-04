@@ -54,6 +54,26 @@ body{background:var(--bg);min-height:100vh}
 .hero-tagline{font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:clamp(19px,3.5vw,26px);color:var(--o);margin-bottom:1rem}
 .hero-desc{max-width:560px;font-size:14px;color:var(--txt2);line-height:1.8}
 
+/* Tom byline card */
+.byline{
+  display:flex;gap:14px;align-items:center;
+  padding:1rem 1.25rem;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin-top:1.75rem;
+}
+.byline-avatar{
+  width:64px;height:64px;border-radius:50%;
+  overflow:hidden;
+  background:var(--o-dim);border:2px solid var(--o);
+  flex-shrink:0;
+}
+.byline-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.byline-body{flex:1;min-width:0}
+.byline-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;color:var(--txt);letter-spacing:0.03em}
+.byline-sub{font-size:12px;color:var(--txt2);line-height:1.5;margin-top:2px}
+
 .rule-orange{height:2px;background:var(--o);border:none;margin:2.5rem 0}
 
 /* Section header */
@@ -517,6 +537,17 @@ body{background:var(--bg);min-height:100vh}
     <h1 class="hero-title">Build Your Legend.</h1>
     <p class="hero-tagline">Story-driven video, made to be chosen.</p>
     <p class="hero-desc">Two-time Emmy Award nominee Tom Langan has spent twenty-five years directing content for the BBC, NBC Universal, and Discovery, leading multi-million-dollar productions everywhere from the Arctic Circle to sub-Saharan Africa. Talex Media brings that same broadcast standard to the brands, founders, and missions we partner with today. What follows is a selection of that work.</p>
+
+    <!-- Tom byline -->
+    <div class="byline">
+      <div class="byline-avatar">
+        <img src="https://static.wixstatic.com/media/3c6878_f5b394fdd9fb45c98fc7e838f91ea231~mv2.jpg" alt="Tom Langan"/>
+      </div>
+      <div class="byline-body">
+        <div class="byline-name">Tom Langan · Founder, Talex Media</div>
+        <div class="byline-sub">2x Emmy Nominee · 25 years · BBC, Discovery, NBC Universal</div>
+      </div>
+    </div>
   </div>
 
   <hr class="rule-orange"/>
